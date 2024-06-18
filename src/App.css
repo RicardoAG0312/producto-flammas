@@ -1,5 +1,73 @@
+/* Fuente Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Fuente Antonio: */
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap');
 * {
     padding: 0px !important;
     margin: 0px !important;
     box-sizing: border-box !important;
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+header, h2, h1 {
+    font-family: "Antonio";
+    font-weight: bold;
+}
+/* Barra de navegacion */
+#navbar{
+    background-color: black;
+    height: 100px;
+    padding: 20px;
+    outline: 0.5px solid white;
+}
+.barra-nav a{
+    font-size: 18px;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.369);
+    color: white;
+    transition: all ease-in-out 0.2s;
+    -webkit-transition: all ease-in-out 0.2s;
+    -moz-transition: all ease-in-out 0.2s;
+    -ms-transition: all ease-in-out 0.2s;
+    -o-transition: all ease-in-out 0.2s;
+}
+.barra-nav a:hover {
+    color: #E0223C;
+}
+.navbar{
+    margin-top: 0;
+    padding: 0;
+    position: sticky;
+    top: 0px;
+    height: 100px;
+    transition: top 0.5s ease;
+    -webkit-transition: top 0.5s ease;
+    -moz-transition: top 0.5s ease;
+    -ms-transition: top 0.5s ease;
+    -o-transition: top 0.5s ease;
+    z-index: 9999;
+}
+.dropdown-menu.show {
+    background-color: black;
+    padding: 5px;
+}
+.navbar-nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar-collapse{
+    align-items: center;
+    justify-content: end;
+    margin: 0;
+    padding: 0;
+}
+.navbar img {
+    width: 200px;
+}
+.nav-link:active {
+    color: #E0223C !important;
+}
+.nav-link:focus {
+    color: #E0223C !important;
 }
